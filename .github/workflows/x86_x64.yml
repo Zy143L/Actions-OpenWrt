@@ -1,4 +1,4 @@
-name: Build OpenWrt -- x86_64
+name: x86_64
 
 on:
   repository_dispatch:
