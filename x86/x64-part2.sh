@@ -65,12 +65,12 @@ EOF
 
 # 常用软件
 cat >> .config <<EOF
+CONFIG_PACKAGE_automount=y
 CONFIG_PACKAGE_luci=y
 CONFIG_PACKAGE_luci-app-openclash=y
 CONFIG_PACKAGE_luci-app-upnp=y
 CONFIG_PACKAGE_luci-app-samba4=y
 CONFIG_PACKAGE_luci-app-npc=y
-CONFIG_PACKAGE_automount=y
 CONFIG_PACKAGE_luci-app-dockerman=y
 CONFIG_PACKAGE_luci-app-nlbwmon=y
 CONFIG_PACKAGE_luci-app-qos=y
