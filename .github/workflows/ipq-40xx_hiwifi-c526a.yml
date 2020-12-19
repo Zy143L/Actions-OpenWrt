@@ -1,5 +1,6 @@
 name: ipq-40xx_hiwifi-c526a
 
+
 on:
   repository_dispatch:
   release:
@@ -13,6 +14,7 @@ on:
 #    - cron: 0 8 */7 * *
   watch:
     types: started
+
 
 env:
   REPO_URL: https://github.com/project-openwrt/openwrt
