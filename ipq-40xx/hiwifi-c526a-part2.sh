@@ -6,8 +6,11 @@ sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/M
 
 # 固件架构
 cat >> .config <<EOF
-CONFIG_TARGET_ipq40xx=y
-CONFIG_TARGET_ipq40xx_DEVICE_hiwifi_c526a=y
+CONFIG_TARGET_ramips=y
+CONFIG_TARGET_ramips_mt76x8=y
+CONFIG_TARGET_ramips_mt76x8_DEVICE_hiwifi_hc5661a=y
+# CONFIG_TARGET_ipq40xx=y
+# CONFIG_TARGET_ipq40xx_DEVICE_hiwifi_c526a=y
 EOF
 
 # 禁用 IPV6
@@ -48,13 +51,13 @@ CONFIG_PACKAGE_wget=y
 CONFIG_PACKAGE_curl=y
 CONFIG_PACKAGE_unzip=y
 CONFIG_PACKAGE_luci-app-turboacc=y
-CONFIG_PACKAGE_autocore-arm=y
+#CONFIG_PACKAGE_autocore-arm=y
 CONFIG_PACKAGE_luci-app-zerotier=y
 CONFIG_PACKAGE_luci-app-ttyd=y
 CONFIG_PACKAGE_luci-app-turboacc=y
 CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_flow-offload=y
 CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_bbr-cca=y
-CONFIG_PACKAGE_luci-app-ssr-python-pro-server=y
+#CONFIG_PACKAGE_luci-app-ssr-python-pro-server=y
 CONFIG_PACKAGE_luci=y
 CONFIG_PACKAGE_luci-app-upnp=y
 CONFIG_PACKAGE_luci-app-samba=y
